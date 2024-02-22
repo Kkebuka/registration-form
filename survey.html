@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+
+        body{
+            background-image: url(image1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+        }
+        .survey{
+            width: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        h1{
+            color: rgb(204, 203, 197);
+            font-size: 2.4rem;
+        }
+        h1,h2{
+            display: block;
+            text-align: center;
+        }
+
+        form {
+            width: 350px;
+            /* max-width: 00px; */
+            padding:0px 50px;
+            padding-top: 20px;
+            background-color: rgba(104, 204, 196, 0.596);
+        }
+        .field{
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            height: 25px;
+            font-size: 0.9rem;
+        }
+        .other {
+            margin-bottom: 20px;
+        }
+        input:focus{
+            background-color: rgb(223, 239, 252);
+        }
+        button {
+            width: 40%;
+            height: 30px;
+            font-size: 1.2rem;
+            text-align: center;
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            /* border: 0px; */
+        }
+
+        button:hover {
+            background-color: rgb(1,68,54);
+            color: white;
+        }
+
+
+        label{
+            font-weight: 800;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chelvin's Blog</h1>
+    </header>
+    <div class="survey">
+        <form action="#">
+            <h2>Registration Form</h2>
+            <label for="fname" id="firstname">First Name</label><br>
+            <input class="field" type="text" name="fname" id="firstname" placeholder="Your First name" required autofocus><br>
+            <label for="lname">Last Name</label><br>
+            <input class="field" type="text" name="lname" id="lastname" placeholder="Your Last name"><br>
+            <label for="lname">Email</label><br>
+            <input class="field" type="email" name="lname" id="email" placeholder="Your Email"><br>
+            <label for="lname">Age</label><br>
+            <input class="field" type="number" name="lname" id="age" placeholder="Age" min="20" max="30"><br>
+
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" >Male<br>
+            <input type="radio" name="gender" id="" class="other">Female<br>
+
+
+            <label for="qualification" >What option best describes you?</label><br>
+            <select name="qualification" id="qualification" class="other">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="expert">Expert</option>
+                <option value="professional">Professional</option>
+            </select><br>
+
+            <label for="language">Languages and Frameworks known</label><br>
+            <input type="checkbox" value="c">C programming<br>
+            <input type="checkbox" value="c#">C#<br>
+            <input type="checkbox" value="Java">Java<br>
+            <input type="checkbox" value="js">Javascripts<br>
+            <input type="checkbox" value="kt">Kotline<br>
+            <input type="checkbox" value="ruby" class="other">Ruby<br>
+
+            <label for="recommendation">Would you recomend this survey for your friends?</label><br>
+            <input type="radio" name="decision">Yes <br>
+            <input type="radio" name="decision" id="" class="other">No<br>
+            
+            <label for="comments">Any Comment(s) or suggestions</label><br>
+            <textarea name="comments" id="" cols="30" rows="5" placeholder="FIll your comments here" class="other"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
